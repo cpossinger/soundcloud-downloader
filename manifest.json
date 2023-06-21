@@ -1,0 +1,19 @@
+{
+  "name": "Soundcloud Downloader",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Soundcloud Downloader"
+  },
+    "permissions": ["activeTab", "scripting", "tabs","downloads","webNavigation"],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [{
+    "resources": ["script.js","click.js","click_func.js","toneden.js","hypeddit_dl.js","jquery-3.6.1.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
